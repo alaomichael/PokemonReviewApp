@@ -44,7 +44,7 @@ namespace PokemonReviewApp.Controllers
             return Ok(reviewer);
         }
         [HttpGet("{reviewerId}/reviews")]
-        //[ProducesResponseType(200, Type = typeof(Review))]
+        [ProducesResponseType(200, Type = typeof(Review))]
         [ProducesResponseType(400)]
         public IActionResult GetReviewByAReviewer(int reviewerId)
         {
